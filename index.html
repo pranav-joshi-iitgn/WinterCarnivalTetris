@@ -1,0 +1,43 @@
+<html>
+    <style>
+    canvas {
+        border: 2px solid black ;
+        background-color: rgb(71, 63, 116);
+    }
+    html {
+        background-color: black;
+    }
+    label {
+        position:absolute;
+        left: 1400;
+        top: 260;
+        color: aliceblue;
+        font-size: xx-large;
+    }
+    button{
+        position: absolute;
+        left:1400;
+        width:100;
+        font-size: x-large;
+        background-color: bisque;
+    }
+    #flip{
+        top:50;
+        height: 70px;
+    }
+    #R{
+        top:150;
+        height: 70px;
+    }
+    </style>
+    <canvas id="can"></canvas>
+    <label> Hi! I am Pranav Joshi. 
+        <br> This is a tiling game, similar to Tetris. 
+        <br> I first encountered this in IITGN's Winter Carnival.
+        <br> Give it a try ! ...
+        <br> Either find a solution, or prove that none exist.
+    </label>
+    <button onclick = "FlipH()" id="Flip"> Flip </button>
+    <button onclick="Rotate()" id="R"> Rotate </button>
+    <script src="Tiles.js"></script>
+</html>
